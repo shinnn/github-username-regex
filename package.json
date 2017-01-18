@@ -1,0 +1,40 @@
+{
+  "name": "github-username-regex",
+  "version": "1.0.0",
+  "description": "A regular expression that only matches a valid Github username",
+  "repository": "shinnn/github-username-regex",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "prebuild": "eslint --fix --format=codeframe module.js test.js",
+    "build": "rollup --config=node:module --no-strict",
+    "pretest": "npm run-script build",
+    "test": "node --throw-deprecation test.js"
+  },
+  "license": "CC0-1.0",
+  "module": "module.js",
+  "files": [
+    "index.js",
+    "module.js"
+  ],
+  "keywords": [
+    "github",
+    "name",
+    "username",
+    "login",
+    "account",
+    "validate",
+    "validation",
+    "match",
+    "regex",
+    "regexp"
+  ],
+  "devDependencies": {
+    "@shinnn/eslint-config-node": "^3.0.0",
+    "eslint": "^3.13.1",
+    "rollup": "^0.41.4",
+    "rollup-config-module": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn/node"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "github-username-regex",
+  "description": "A regular expression that only matches a valid Github username",
+  "keywords": [
+    "string",
+    "stringify",
+    "tostring",
+    "type",
+    "append",
+    "concat",
+    "join"
+  ],
+  "main": "module.js",
+  "moduleType": "es6",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/github-username-regex.git"
+  },
+  "authors": [
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
+  ],
+  "license": "CC0-1.0",
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "coverage",
+    "node_modules"
+  ]
+}
