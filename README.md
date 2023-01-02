@@ -11,14 +11,15 @@ import githubUsernameRegex from 'github-username-regex';
 
 githubUsernameRegex.test('john'); //=> true
 githubUsernameRegex.test('john-due'); //=> true
-githubUsernameRegex.test('john-due-'); //=> false
+githubUsernameRegex.test('john--due'); //=> false
 ```
 
 According to the form validation messages on [*Join Github*](https://github.com/join) page,
 
 * Github username may only contain alphanumeric characters or hyphens.
 * Github username cannot have multiple consecutive hyphens.
-* Github username cannot begin or end with a hyphen.
+* Github username cannot begin with a hyphen.
+  * Github previously allowed usernames to end with a hyphen, but does not anymore.
 * Maximum is 39 characters.
 
 ## Installation
@@ -50,6 +51,7 @@ Type: [`RegExp`](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular
 githubUsernameRegex.test('a');
 githubUsernameRegex.test('0');
 githubUsernameRegex.test('a-b');
+githubUsernameRegex.test('a-b-');
 githubUsernameRegex.test('a-b-123');
 githubUsernameRegex.test('a'.repeat(39));
 
@@ -57,7 +59,7 @@ githubUsernameRegex.test('a'.repeat(39));
 githubUsernameRegex.test('');
 githubUsernameRegex.test('a_b');
 githubUsernameRegex.test('a--b');
-githubUsernameRegex.test('a-b-');
+githubUsernameRegex.test('a-b--');
 githubUsernameRegex.test('-a-b');
 githubUsernameRegex.test('a'.repeat(40));
 ```
