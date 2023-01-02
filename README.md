@@ -19,7 +19,7 @@ According to the form validation messages on [*Join Github*](https://github.com/
 * Github username may only contain alphanumeric characters or hyphens.
 * Github username cannot have multiple consecutive hyphens.
 * Github username cannot begin with a hyphen.
-** Github previously allowed usernames to end with a hyphen, but does not anymore.
+  * Github previously allowed usernames to end with a hyphen, but does not anymore.
 * Maximum is 39 characters.
 
 ## Installation
